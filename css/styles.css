@@ -53,6 +53,12 @@ body {
 ul {
   list-style: none;
 }
+.header-nav {
+  display: flex;
+  align-items: center;
+
+}
+
 
 .list {
   list-style: none;
