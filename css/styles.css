@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /*body font-family:'Roboto';*/
 :root {
   --primary-text-color: #757575;
@@ -22,28 +28,30 @@ body {
 }
 
 .container {
-  width: 1260px;
+  display: flex;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: left 15px;
   padding: right 15px;
+  outline: 1px solid #ECECEC;
+  border: 1px solid #ECECEC;
 }
 
 .list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
 }
 .main-nav {
   display: flex;
   align-items: center;
 }
-.hero {
-  background: #2F303A;
-}
 
 /*логотип*/
 .logo-blue {
+  margin-left: 220px;
+  margin-right: 0px;
   
   font-family: "Raleway";
   font-style: normal;
@@ -54,7 +62,7 @@ body {
 }
 
 .logo-black {
-  margin-right: 93px;
+  margin-right: 0px;
   color: var(--accent-black-color)
 }
 
@@ -64,14 +72,26 @@ body {
 /*навігація*/
 .site-nav {
   display: flex;
-  justify-content:center
+  margin-left: 93px;
+  
 }
-
 .site-nav .item:not(:first-child) {
   margin-left: 50px;
-
 }
-.header-link:hover
+
+.site-nav .link {
+  display: block;
+  padding-top: 29.2px;
+  padding-bottom: 36.2px;
+
+  color: var(--title-text-color);
+ 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
 ul {
   list-style: none;
 }
@@ -80,33 +100,30 @@ a {
   text-decoration: none;
 }
 
-.header-link {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-}
-
-.header-link.current {
+.site-nav:hover,
+.site-nav:focus {
   color: var(--accent-color)
 }
-
-.header-link:hover,
-.header-link:focus {
+.site-nav .link.current {
   color: var(--accent-color)
-}
 
+}
 a[href="#"] {
   color: var(--title-text-color)
 }
 
 /*електронна адреса і телефон*/
-.auth-nav {
+.contact-nav {
   display: flex;
-  align-items: center
+  align-items: center;
+  padding-top: 29.2px;
+  padding-bottom: 36px;
 }
+
 .link {
+  margin-left: 0px;
+  margin-right: 0px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -119,6 +136,8 @@ a[href="#"] {
 }
 
 .heder-tel-link {
+  margin-left: auto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -132,6 +151,9 @@ a[href="#"] {
 }
 
 /*Шапка, кнопки*/
+.hero {
+  background: #2F303A;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
