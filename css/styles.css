@@ -1,8 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 /*body font-family:'Roboto';*/
 :root {
@@ -15,36 +11,50 @@
   --primary-button-color: #F5F4FA;
   --primary-grey-color: rgba(255, 255, 255, 0.6);
 }
-h1,
-h2,
-p {
-  margin: 0;
-}
 
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
+/*Утіліти*/
+h1,
+h2,
+p {
+  margin: 0;
+}
 
-.container {
-  width: 1200px;
-  margin: 0px;
-  padding: 0px;
-  border: 1px solid #ECECEC;
-}
-.page-header .container {
-  display: flex;
-}
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+.container {
+  width: 1200px;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #ECECEC;
+}
 
+.page-header .container{
+  display: flex;
+  align-items: center;
+}
+.page-header {
+  padding-top: 56px ;
+  padding-bottom: 34px; 
+}
+.main-nav {
+  padding: 32px 0px;
+}
 /*логотип*/
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 145px;
+}
 .logo-blue {
- 
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -62,15 +72,26 @@ body {
 }
 /*навігація*/
 
+.header-cont {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+  margin-left: 93px;
+  
 
-.site-nav .link {
- 
+
   color: var(--title-text-color);
- 
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+}
+.site-nav .item +.item {
+  margin-left: 50px;
 }
 
 ul {
@@ -95,6 +116,24 @@ a[href="#"] {
 
 /*електронна адреса і телефон*/
 
+.contact-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+}
+
+.contact-nav .item + .item {
+  margin-left: 50px;
+}
+
+.contact-nav .item + .item {
+  margin-left: 50px;
+}
+.contakt-link {
+  width: 135px;
+}
 .link {
   font-weight: 500;
   font-size: 14px;
@@ -113,7 +152,8 @@ a[href="#"] {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
+  width: 122px;
 }
 
 .heder-tel-link:hover,
