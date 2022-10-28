@@ -41,10 +41,7 @@ p {
   display: flex;
   align-items: center;
 }
-.page-header {
-  padding-top: 56px ;
-  padding-bottom: 34px; 
-}
+
 .main-nav {
   padding: 32px 0px;
 }
@@ -74,15 +71,14 @@ p {
 
 .header-cont {
   display: flex;
+  
 }
 .site-nav {
   display: flex;
   align-items: center;
-  padding: 32px 0;
+  padding: 32px;
   margin-left: 93px;
   
-
-
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -166,6 +162,26 @@ a[href="#"] {
   background: #2F303A;
 }
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color)
+}
+/*Заголовки першої сторінки*/
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+
+  font-family: 'Roboto';
+  font-style: inherit;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
@@ -174,9 +190,32 @@ a[href="#"] {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: var(--primary-white-color)
+  color: var(--primary-white-color);
+}
+.button-primary {
+  padding: 10px 32px;
+  margin: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-family: inherit;
+  display: flex;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
+.button-primary:hover,
+.button-primary:focus {
+  background-color: var(--active-blue);
+
+}
 .section-team {
   background-color: var(--primary-button-color)
 }
@@ -185,31 +224,7 @@ a[href="#"] {
   background-color: var(--primary-white-color);
 }
 
-.button-primary {
 
-  font-family: inherit;
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.06em;
-
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 10px 32px;
-
-  color: var(--primary-white-color);
-
-  cursor: pointer;
-}
-
-.button-primary:hover,
-.button-primary:focus {
-  background-color: var(--active-blue);
-  
-}
 .portfolio-button-first {
   padding: 6px 25px;
   font-family: 'Roboto';
@@ -250,23 +265,10 @@ a[href="#"] {
   color: var(--primary-white-color)
 }
 
-/*Заголовки першої сторінки*/
-.hero-title {
-  font-family: 'Roboto';
-  font-style: inherit;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3;
-  /* or 136% */
 
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: var(--primary-white-color);
-}
 
 .main-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -276,6 +278,9 @@ a[href="#"] {
 }
 
 .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -286,7 +291,8 @@ a[href="#"] {
 }
 
 .name-title {
-
+  margin-top: 0px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -294,6 +300,28 @@ a[href="#"] {
 
   text-align: center;
   letter-spacing: 0.03em;
+}
+/*секції*/
+.section {
+  width: 1200px;
+  margin-right: 0px;
+  padding-top:94px ;
+  padding-bottom: 94px;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.features .item + .item {
+  margin-left: 30px;
+
+} 
+/*картинки*/
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 94px;
 }
 
 /*Заголовки портфоліо*/
@@ -309,6 +337,8 @@ a[href="#"] {
 
 /*Параграфи*/
 .text-main {
+  width: 270px;
+  margin-right: 0px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -337,6 +367,7 @@ a[href="#"] {
   color: var(--primary-text-color);
 
 }
+
 
 .visually-hidden {
   position: absolute;
