@@ -81,7 +81,9 @@ p {
 }
 
 .logo-white {
+  margin-bottom: 20px;
   color: var(--primary-white-color)
+  
 }
 
 /*навігація*/
@@ -166,6 +168,7 @@ a[href="#"] {
 }
 
 .heder-tel-link {
+  white-space: nowrap;
 
   font-weight: 500;
   font-size: 14px;
@@ -174,7 +177,6 @@ a[href="#"] {
   color: var(--primary-text-color);
   width: 122px;
 }
-
 .heder-tel-link:hover,
 .heder-tel-link:focus {
   color: var(--accent-color);
@@ -241,7 +243,7 @@ a[href="#"] {
 /*Особливості*/
 .features {
   display: flex;
-  flex-wrap: wrap;
+
 }
 .title {
   margin-top: 0px;
@@ -287,25 +289,20 @@ a[href="#"] {
 .main-title .what {
 width: 366px;
 }
-
-/* img задаємо властивість display: block,
- width: 100%,
- height: auto.*/
-
+.img {
+  display: block;
+  width: 100%;
+  height: auto
+}
 .images {
   display: flex;
-  margin-left: -30px;
+  margin-left: -60px;
 }
 .images .item {
-  width: calc((100%-30px)/3);
+  width: calc((100% - 30px)/3);
   margin-left: 30px;
 }
  
-.img {
-  display: block;
-  width: 100%, ;
-  height: auto
-}
 /*наша команда*/
 .team {
   background-color: var(--primary-button-color)
@@ -421,10 +418,18 @@ width: 366px;
 /*футер*/
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background: #2F303A;
 }
-
+.footer-link-end {
+  padding: 0px;
+  margin-left: 0px;
+}
 .footer-addres {
+  margin-bottom: 9px;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -437,6 +442,8 @@ width: 366px;
 }
 
 .footer-link {
+  margin-bottom: 9px;
+
   font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
@@ -448,6 +455,7 @@ width: 366px;
 }
 
 .footer-tel-link {
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
