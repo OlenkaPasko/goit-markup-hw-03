@@ -29,13 +29,18 @@ p {
   padding: 0;
   margin: 0;
 }
-
+/*секції*/
+.section {
+  margin:auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
   width: 1200px;
-  margin: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
-  
+  margin: 0 auto;
+  margin-right: 0px;
+  padding: 0px 15px
+
 }
 
 .visually-hidden {
@@ -54,15 +59,14 @@ p {
 /*верхня лінія*/
 
 .header-cont {
-  border-bottom:  1px solid #ECECEC;
+  margin: 0px;
+
+  border-bottom: 1px solid #ECECEC;
 }
+
 .page-header .container {
   display: flex;
   align-items: center;
-}
-
-.main-nav {
-  padding: 32px 0px;
 }
 
 /*логотип*/
@@ -91,6 +95,13 @@ p {
 }
 
 /*навігація*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
 
 .header-cont {
   display: flex;
@@ -100,8 +111,10 @@ p {
 .site-nav {
   display: flex;
   align-items: center;
-  padding: 32px;
-  margin-left: 93px;
+  padding-top: 32px;
+  padding-right: 344px;
+  padding-bottom: 32px;
+  padding-left: 93px;
 
   color: var(--title-text-color);
 
@@ -113,14 +126,6 @@ p {
 
 .site-nav .item+.item {
   margin-left: 50px;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .site-nav:hover,
@@ -187,25 +192,20 @@ a[href="#"] {
   color: var(--accent-color);
 }
 
-/*секції*/
-.section {
-  width: 1200px;
-  margin-right: 0px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 /*Шапка,заголовок,головна кнопка*/
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;  
   text-align: center;
+
   background: #2F303A;
 }
 
 .hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
   margin: auto;
+  margin-bottom: 30px;
   width: 696px;
 
   font-family: 'Roboto';
@@ -251,7 +251,17 @@ a[href="#"] {
 
 }
 
-.title {
+.container-features {
+  padding:0px;
+  margin: 0px;
+}
+.section-features {
+  width: 1200px;
+  margin: auto;
+  padding-top: 94px;
+  padding-bottom: 0px;
+
+}.title {
   margin-top: 0px;
   margin-bottom: 10px;
 
@@ -284,8 +294,8 @@ a[href="#"] {
 }
 
 /*чим ми займаємося*/
+
 .main-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -296,24 +306,39 @@ a[href="#"] {
   color: var(--title-text-color);
 }
 
+.our-team {
+  padding-top: 0px;
+
+}
+
 .main-title .what {
+  padding-top: 0px;
+  padding-right: 617px;
+  padding-left: 617px;
   width: 366px;
 }
 
 .img {
   display: block;
   width: 100%;
-  height: auto
+  height: auto;
 }
 
 .images {
   display: flex;
-  margin-left: -60px;
+  margin-left: -30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  
 }
 
 .images .item {
   width: calc((100% - 30px)/3);
   margin-left: 30px;
+}
+.images .item:first-child {
+  margin-left: 0px;
 }
 
 /*наша команда*/
@@ -322,28 +347,34 @@ a[href="#"] {
 }
 
 .main-foto {
-  margin-bottom: 30px;
+
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   background-color: var(--primary-white-color);
 }
-
-.main-foto>img {
-  margin-bottom: 30px;
-
+.main-foto:nth-child(n+2){
+  margin-left: 30px;
 }
 
 .main-page-foto {
   display: flex;
-  margin-left: -30px;
-
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -60px;
 }
 
 .main-page-foto .main-foto {
   width: calc((100% - 30px)/4)
 }
-
+.foto {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.main-title .what {
+  width: 264px;
+}
 .name-title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -372,8 +403,9 @@ a[href="#"] {
 .portf-button {
   display: flex;
   border: none;
-  justify-content:center
+  justify-content: center
 }
+
 .portfolio-button-first {
   padding: 6px 25px;
 
@@ -386,7 +418,7 @@ a[href="#"] {
   cursor: pointer;
 
   background-color: #F5F4FA;
-  
+
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
