@@ -249,7 +249,8 @@ a[href="#"] {
 /*Особливості*/
 .features {
   display: flex;
-
+  flex-basis: auto;
+  
 }
 
 .container-features {
@@ -321,7 +322,7 @@ a[href="#"] {
 .img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 
 }
 
@@ -379,8 +380,6 @@ a[href="#"] {
 }
 
 .foto {
-  margin: 0px;
-  padding: 0px;
   margin-bottom: 30px;
 }
 
@@ -390,18 +389,18 @@ a[href="#"] {
 
 .name-title {
   margin-top: 0px;
-  margin-bottom: 10px;
-
-  color: var(--title-text-color);
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
 
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 .text {
+  margin-top: 10px;
   margin-bottom: 30px;
 
   font-weight: 400;
@@ -434,8 +433,6 @@ a[href="#"] {
   cursor: pointer;
 
   background-color: #F5F4FA;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
 }
@@ -443,7 +440,9 @@ a[href="#"] {
 .portfolio-button-first:hover,
 .portfolio-button-first:focus {
   background-color: var(--accent-color);
-  color: var(--primary-white-color)
+  color: var(--primary-white-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button {
@@ -482,8 +481,25 @@ a[href="#"] {
 
 .flex-text {
   padding: 20px 24px;
-  border-radius: 1px solid #EEEEEE;
 }
+.flex-text {
+  /*стилі правої рамки */
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--border-line-color);
+
+  /* стилі нижньої рамки */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-line-color);
+
+  /*стилі лівої рамки */
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--border-line-color);
+  border-radius: 1px;
+}
+
 
 /*Заголовки портфоліо*/
 
