@@ -57,20 +57,23 @@ p {
 }
 
 /*верхня лінія*/
+.page-header {
+    
+    margin: 0px;
+  }
 
 .page-header .container {
   display: flex;
   align-items: center;
 }
+
 .header-cont {
-  margin: 0px;
+  
   border-bottom: 1px solid #ECECEC;
 }
 
 /*логотип*/
 .logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
   width: 145px;
 }
 
@@ -89,7 +92,6 @@ p {
 
 .logo-white {
   margin-bottom: 20px;
-  
   color: var(--primary-white-color)
 }
 
@@ -102,19 +104,21 @@ a {
   text-decoration: none;
 }
 
-.header-cont {
-  display: flex;
-  margin-right: 0px;
-
-}
-
 .site-nav {
   display: flex;
-  padding-top: 32px;
-  padding-right: 344px;
-  padding-bottom: 32px;
-  padding-left: 93px;
-
+  align-items: center;
+}
+.site-nav {
+padding-top: 32px;
+padding-bottom: 32px;
+}
+.site-nav .item:not(:first-child) {
+  margin-left: 50px;
+}
+.site-nav {
+  margin-left: 93px;
+}
+.site-nav {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -123,9 +127,6 @@ a {
   letter-spacing: 0.02em;
 }
 
-.site-nav .item + .item {
-  margin-left: 50px;
-}
 
 .site-nav:hover,
 .site-nav:focus {
@@ -144,17 +145,13 @@ a[href="#"] {
 
 .contact-nav {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-left: auto;
-}
 
+}
 .contact-nav .item + .item {
   margin-left: 50px;
 }
-
-.contact-nav .item + .item {
-  margin-left: 50px;
+.contact-nav {
+  margin-left: 344px;
 }
 
 .contakt-link {
@@ -324,7 +321,6 @@ a[href="#"] {
 
 .images {
   display: flex;
-  margin-left: -30px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -365,9 +361,10 @@ a[href="#"] {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: -60px;
 }
-
+.main-page-foto {
+  padding-left: 0px;
+}
 .main-page-foto .main-foto {
   width: calc((100% - 30px)/4)
 }
