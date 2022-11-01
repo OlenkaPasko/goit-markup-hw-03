@@ -58,9 +58,9 @@ p {
 
 /*верхня лінія*/
 .page-header {
-    
-    margin: 0px;
-  }
+
+  margin: 0px;
+}
 
 .page-header .container {
   display: flex;
@@ -68,7 +68,7 @@ p {
 }
 
 .header-cont {
-  
+
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -108,16 +108,20 @@ a {
   display: flex;
   align-items: center;
 }
+
 .site-nav {
-padding-top: 32px;
-padding-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .site-nav .item:not(:first-child) {
   margin-left: 50px;
 }
+
 .site-nav {
   margin-left: 93px;
 }
+
 .site-nav {
   color: var(--title-text-color);
 
@@ -147,9 +151,11 @@ a[href="#"] {
   display: flex;
 
 }
-.contact-nav .item + .item {
+
+.contact-nav .item+.item {
   margin-left: 50px;
 }
+
 .contact-nav {
   margin-left: 344px;
 }
@@ -171,7 +177,7 @@ a[href="#"] {
   color: var(--accent-color)
 }
 
-.heder-tel-link { 
+.heder-tel-link {
 
   white-space: nowrap;
   font-weight: 500;
@@ -341,6 +347,7 @@ a[href="#"] {
   padding-top: 0px;
 
 }
+
 .team {
   background-color: var(--primary-button-color)
 }
@@ -362,9 +369,11 @@ a[href="#"] {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .main-page-foto {
   padding-left: 0px;
 }
+
 .main-page-foto .main-foto {
   width: calc((100% - 30px)/4)
 }
@@ -410,7 +419,7 @@ a[href="#"] {
   justify-content: center;
   margin: 0px;
   padding: 0px;
- 
+
 }
 
 .portfolio-button-first {
