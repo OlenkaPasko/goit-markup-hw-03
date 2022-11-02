@@ -19,7 +19,7 @@ body {
 .img {
   display: block;
   width: 100%;
-  height: auto
+  height: auto;
 
 }
 /*Утіліти*/
@@ -385,6 +385,7 @@ a[href="#"] {
 }
 
 .name-title {
+  padding-bottom: 10px;
   margin-top: 0px;
   margin-bottom: 10px;
   
