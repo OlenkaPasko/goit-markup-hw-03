@@ -16,12 +16,14 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
+
 .img {
   display: block;
   width: 100%;
   height: auto;
 
 }
+
 /*Утіліти*/
 h1,
 h2,
@@ -252,8 +254,6 @@ a[href="#"] {
 /*Особливості*/
 .features {
   display: flex;
-  flex-basis: auto;
-  
 }
 
 .container-features {
@@ -283,7 +283,6 @@ a[href="#"] {
 }
 
 .text-main {
-  width: 270px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -291,6 +290,10 @@ a[href="#"] {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color)
+}
+
+.features .item {
+  flex-basis: calc((100% - 30px) / 4);
 }
 
 .features .item {
@@ -380,6 +383,7 @@ a[href="#"] {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .main-title .what {
   width: 264px;
 }
@@ -388,7 +392,7 @@ a[href="#"] {
   padding-bottom: 10px;
   margin-top: 0px;
   margin-bottom: 10px;
-  
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -475,8 +479,9 @@ a[href="#"] {
   gap: 30px;
 
 }
-.flex-container {
-  flex-basis: calc((100% - 30px)/3)
+
+.flex-container .item {
+  flex-basis: calc((100% - 60px)/3)
 }
 
 .flex-text {
